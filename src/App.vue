@@ -1,30 +1,31 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+<TopNavVue />
+<MainContent />
+<MainFooter />
   <router-view/>
 </template>
 
+<script>
+import TopNavVue from "./components/TopNav.vue";
+import MainContent from "./components/MainContent.vue";
+import MainFooter from "./components/MainFooter.vue";
+
+export default{
+  components: {
+    TopNavVue,
+    MainContent,
+    MainFooter
+}
+
+}
+</script>
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
