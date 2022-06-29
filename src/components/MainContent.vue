@@ -168,7 +168,7 @@ main {
 }
 .carousel {
     background-color: #efefef;
-    height: 60vh;
+    height: 70vh;
 }
 
 .carousel-inner {
@@ -177,11 +177,11 @@ main {
 .carousel-inner .row{
     display: flex;
     justify-content: space-between;
-    padding-top: 5rem;
+    padding: 5rem;
 }
 
 .carousel .row img {
-  width: 80%;
+  width: 70%;
 }
 
 .title {
@@ -190,6 +190,23 @@ main {
 }
 .text {
   text-align: center;
+  margin: 13rem 0 auto 12rem; 
+  font-size: 20px;
+}
+
+.text h2 {
+  font-size: 38px;
+}
+
+.text h4{
+  font-size: 24px;
+}
+/* carousel control */
+.glyphicon {
+  font-size: 50px;
+  color: #59ab6e;
+  padding: 7px;
+  background: #bbbbbb !important;
 }
 /* end of carousel */
 /* Categories section */
@@ -243,23 +260,29 @@ main {
 .card {
   background-color: white;
   height: 550px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .rating {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
 }
 .stars {
   font-size: 20px;
   color: rgb(224, 224, 12);
+  text-align: left;
 }
-.card h4, p {
+
+.num {
+  text-align: right;
+}
+.card h4, .card p {
   text-align: left;
   font-size: 18px;
   margin: 5px;
 }
 .card h4, .num {
   color: #c2c4c7;
+  margin: 10px;
 }
 </style>
