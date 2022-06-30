@@ -1,4 +1,4 @@
-<!-- <template>
+<template>
  <MainContent />
 </template>
 
@@ -12,4 +12,4 @@ export default {
     MainContent
   }
 }
-</script> -->
+</script>

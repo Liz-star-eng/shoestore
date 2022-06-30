@@ -1,19 +1,18 @@
 <template>
 <TopNavVue />
-<MainContent />
-<MainFooter />
   <router-view/>
+<!-- <MainContent /> -->
+<MainFooter />
 </template>
 
 <script>
 import TopNavVue from "./components/TopNav.vue";
-import MainContent from "./components/MainContent.vue";
+// import MainContent from "./components/MainContent.vue";
 import MainFooter from "./components/MainFooter.vue";
 
 export default{
   components: {
     TopNavVue,
-    MainContent,
     MainFooter
 }
 
