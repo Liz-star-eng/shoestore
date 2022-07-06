@@ -18,8 +18,8 @@
         <div class="col-sm-4">
             <h2>Further Info</h2><br>
            
-            <router-link to="">Home</router-link><br><br>
-            <router-link to="">About Us</router-link><br><br>
+            <router-link to="/">Home</router-link><br><br>
+            <router-link to="/about">About Us</router-link><br><br>
             <router-link to="">FAQS</router-link><br><br>
             <router-link to="">Contact</router-link><br>
         </div>
@@ -68,6 +68,7 @@ a:hover {
 .row {
 display: flex;
 justify-content: space-evenly;
+flex-wrap: wrap;
 padding: 5px;
 height: 20%;
 border-bottom: 1px solid rgba(207, 214, 225, 0.3);
@@ -75,6 +76,7 @@ border-bottom: 1px solid rgba(207, 214, 225, 0.3);
 .interact {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: 5rem 20rem;
 }
 .interact a {
@@ -84,6 +86,7 @@ border-bottom: 1px solid rgba(207, 214, 225, 0.3);
     border-radius: 50%;
     padding: 1rem;
 }
+
 .interact a:first-child {
     padding: 1rem 1.3rem;
 }
@@ -114,6 +117,34 @@ border-bottom: 1px solid rgba(207, 214, 225, 0.3);
     background-color: #1d242d;
     padding: 3rem;
     font-size: 18px; 
+}
+
+@media only screen and (min-width: 768px){
+     .socialMedia {
+         margin-bottom: 2rem;
+     }
+}
+
+@media only screen and (max-width: 600px) {
+    footer {
+        overflow: hidden;
+    };
+    .row {
+        display: block !important;
+    }
+
+    .row div {
+        width: 100%;
+    }
+
+    .interact {
+        margin: 2rem 1rem;
+    }
+    .socialMedia {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
 }
 
 </style>

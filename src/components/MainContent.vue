@@ -168,14 +168,18 @@ main {
 }
 .carousel {
     background-color: #efefef;
+    width: 100vw;
     height: 70vh;
+    margin: 0;
 }
 
 .carousel-inner {
+  width:100% !important;
   height: 100%;
 }
 .carousel-inner .row{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding: 5rem;
 }
@@ -216,6 +220,8 @@ main {
 .row2 {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .row2 img {
@@ -284,5 +290,45 @@ main {
 .card h4, .num {
   color: #c2c4c7;
   margin: 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+.carousel-inner .row {
+  padding: 1rem;
+}
+}
+
+@media only screen and (max-width: 998px) {
+  /* carousel */
+.carousel-inner .row {
+flex-direction: column;
+}
+
+
+.carousel-inner .row div {
+  width: 100%;
+  margin: 0;
+}
+.carousel .row img {
+  width: 60%;
+  height: 300px;
+}
+.row3 .col-sm-4 {
+  padding-left: 6rem;
+}
+
+}
+/* end */
+@media only screen and (max-width: 600px) {
+.carousel .row img {
+  height: 200px;
+}
+.carousel-inner .row div {
+  width: 100%;
+  height: 250px;
+}
+.text {
+  font-size: 16px;
+}
 }
 </style>
