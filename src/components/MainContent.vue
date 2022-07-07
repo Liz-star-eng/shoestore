@@ -157,6 +157,24 @@
       </div>
     </div>
   <!-- end -->
+  <div class="recommended">
+    <h2>Recommended</h2>
+    <div class="container">
+      <div class="col-sm-3">
+        <img src="../assets/lamp.jpg" alt="">
+      </div>
+      <div class="col-sm-3">
+         <img src="../assets/shoe.jpg" alt="">
+      </div>
+      <div class="col-sm-3">
+         <img src="../assets/feature_prod_02.jpg" alt="">
+      </div>
+      <div class="col-sm-3">
+         <img src="../assets/gym.jpg" alt="">
+      </div>
+    </div>
+
+  </div>
     
 </main>
 </template>
@@ -257,6 +275,7 @@ main {
   justify-content: space-between !important;
   flex-wrap: wrap;
 }
+
 .row3 .col-sm-4 img{
   width: 100%;
   height: 300px;
@@ -292,6 +311,29 @@ main {
   margin: 10px;
 }
 
+/* recommended */
+.recommended {
+ background-color: white;
+  padding-bottom: 5px;
+}
+
+.recommended .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.container img{
+  width: 250px;
+  height: 300px;
+  
+}
+
+.container .col-sm-3, .container img {
+  border-radius: 10px;
+}
+/* end */
+
 @media only screen and (max-width: 1200px) {
 .carousel-inner .row {
   padding: 1rem;
@@ -313,10 +355,15 @@ flex-direction: column;
   width: 60%;
   height: 300px;
 }
-.row3 .col-sm-4 {
-  padding-left: 6rem;
-}
 
+
+.row3 .col-sm-4 {
+  width: 50%;
+}
+.container .col-sm-3{
+  width: 50%;
+  margin-bottom: 5px;
+}
 }
 /* end */
 @media only screen and (max-width: 600px) {
@@ -330,5 +377,16 @@ flex-direction: column;
 .text {
   font-size: 16px;
 }
+.row3 .col-sm-4 {
+  padding-left: 5rem;
+   width: 100%;
+}
+
+
+.container {
+  flex-direction: column;
+  padding-left: 5rem;
+}
+
 }
 </style>

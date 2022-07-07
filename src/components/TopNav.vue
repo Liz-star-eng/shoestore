@@ -14,7 +14,7 @@
 </nav>
 <!-- main navbar -->
  <div>
-<nav class="MainNav">
+<nav class="MainNav" style=" border: 1px solid black">
     <div class="row">
         <div class="col-sm-2"><router-link class="title" to="/"><h2 class="shopName">Carter</h2></router-link></div>
         <div class="col-sm-8 a">
@@ -22,7 +22,7 @@
                 <router-link class="link" to="/">Home</router-link>
                 <router-link class="link" to="/about">About</router-link>
                 <router-link class="link" to="/shop">Shop</router-link>
-                <router-link class="link" to="">Contact</router-link>
+                <router-link class="link" to="/contact">Contact</router-link>
             </ul>
         </div>
         <div class="col-sm-2 socials">
@@ -93,9 +93,9 @@ export default {
 
 .MainNav {
     padding: 0;
-     box-shadow: 5px 3px 10px rgb(218, 214, 214);
-     height: 12vh;
-     overflow: hidden;
+    height: 15vh;
+    overflow: hidden;
+    box-shadow: 5px 3px 10px rgb(218, 214, 214) !important;
 }
 
 .col-sm-6, .socials a {
@@ -167,7 +167,7 @@ span {
 .mobile-nav {
      display: none;
      top: 12vh;
-     padding: 0 1rem 3rem 1rem;
+     padding: 0 1rem 9rem 1rem;
      box-shadow: 5px 3px 10px rgb(218, 214, 214);
      height: 10vh;
 }
